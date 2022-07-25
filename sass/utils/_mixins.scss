@@ -1,0 +1,9 @@
+@mixin centeredFlex ($type: flex, $vertical: center, $horizontal: center) {
+    display: $type;
+    align-items: $vertical;
+    justify-content: $horizontal;
+}
+
+@mixin transition ($action: border-color) {
+        transition: $action 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,51 @@
+.footer {
+    padding: 60px 0px;
+    background-color: $bg-footer;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-adress {
+    margin-right: 70px;
+}
+
+.footer__link {
+    color: $footer-contacts;
+    @include transition (color);
+    &:hover,
+    &:focus,
+    &:active {
+            color: $accent;
+        }
+}
+
+.address {
+    min-width: 231px;
+}
+
+.address__text {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: $footer-text;
+}
+
+.footer__mail {
+    margin-bottom: 9px;
+}
+
+.footer__title {
+    margin-bottom: 20px;
+    font-size: inherit;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $footer-text;
+}

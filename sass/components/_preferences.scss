@@ -1,0 +1,36 @@
+.preferences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.preferences__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    text-align: left;
+    &:nth-child(4n) {
+        margin-right: 0px;
+        }
+}
+
+.preferences__overlay {
+    @include centeredFlex ();
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $bg-button;
+}
+
+.preferences__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $font-title;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.preferences__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

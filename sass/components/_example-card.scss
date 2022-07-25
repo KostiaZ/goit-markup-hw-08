@@ -1,0 +1,59 @@
+.example-card {
+    text-decoration: none;
+}
+
+.example-card__overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.example-card__img {
+    display: block;
+}
+
+.example-card__description {
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $bg-body;
+    background-color: $card-overlay;
+    @include transition (transform);
+
+    .example-card:hover &,
+    .example-card:focus & {
+        transform: translateY(-101%);
+    }
+}
+
+.example-card__name {
+    padding: 20px 24px;
+    text-align: left;
+    border-left: 1px solid $border-card;
+    border-bottom: 1px solid $border-card;
+    border-right: 1px solid $border-card;
+}
+
+.example-card__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $font-title;
+}
+
+.example-card__category {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $font-p;
+}
+
+

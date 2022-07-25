@@ -1,0 +1,40 @@
+.clients__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $font-title;
+}
+
+.clients__list {
+    @include centeredFlex();
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__link {
+    @include centeredFlex ();
+    @include transition();
+    width: 170px;
+    height: 92px;
+    border: 1px solid $social-icon;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        border-color: $accent;
+    }
+}
+
+.clients__icon {
+    fill: $social-icon;
+    @include transition (fill);
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: $accent;
+    }
+}

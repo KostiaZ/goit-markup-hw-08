@@ -1,0 +1,52 @@
+.footer-subscribe {
+    flex-grow: 1;
+    padding-top: 12px;
+}
+
+.footer-subscribe__item {
+    width: 100%;
+}
+
+.footer-subscribe__form {
+    @include centeredFlex ($horizontal: right)
+}
+
+.footer-subscribe__input {
+    height: 50px;
+    width: 100%;
+    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $bg-footer;
+    color: $footer-text;
+}
+
+.footer-subscribe__button-submit {
+    @include centeredFlex;
+    height: 50px;
+    padding: 10px 29px;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: $accent;
+    color: $footer-text;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+            background-color: $bg-hover-buton-order;
+    }
+}
+
+.footer-subscribe__icon {
+    fill: $footer-text;
+    margin-left: 10px;
+}

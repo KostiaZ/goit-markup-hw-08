@@ -1,0 +1,17 @@
+.block-team {
+    background-color: $bg-our-team;
+}
+
+.block-team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: $font-title;
+    letter-spacing: 0.03em;
+}
+
+.team {
+    @include centeredFlex ();
+    @include transition (fill);
+}

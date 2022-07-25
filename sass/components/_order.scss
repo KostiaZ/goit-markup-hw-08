@@ -1,0 +1,47 @@
+.order {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 0px;
+    background-color: $bg-order;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.order__title {
+    width: 696px;
+    padding: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: $font-order;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.order__button {
+    min-width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: $font-active-button;
+    background-color: $accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: $accent;
+    cursor: pointer;
+    @include transition (background-color);
+        &:hover,
+        &:focus {
+            background-color: $bg-hover-buton-order;
+        }
+}
