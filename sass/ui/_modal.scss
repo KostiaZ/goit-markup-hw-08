@@ -15,7 +15,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow-y: auto;
+  width: 528px;
+  height: 581px;
   padding: 40px;
   background-color: var(--basic-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -30,6 +31,7 @@
     padding: 15px;
     width: calc(100% - 20px);
   }
+
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
   }
@@ -53,12 +55,14 @@
       fill: var(--accent-color);
     }
   }
+
   &__close-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   &__title {
     font-size: 20px;
     line-height: 1.5;

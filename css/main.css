@@ -355,7 +355,7 @@ img {
   -webkit-transition: fill var(--time-transition) var(--cubic);
   transition: fill var(--time-transition) var(--cubic);
 }
-.main-form__field:focus-within > .main-form__icon {
+.main-form__field:focus-within > .main-form__icon, .main-form__icon:focus-visible, .main-form__field:hover .main-form__icon, .main-form__field:focus .main-form__icon {
   fill: var(--accent-color);
 }
 .main-form__input {
@@ -364,11 +364,10 @@ img {
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  border-color: var(--primary-text-color);
   -webkit-transition: border var(--time-transition) var(--cubic);
   transition: border var(--time-transition) var(--cubic);
 }
-.main-form__input:focus-within {
+.main-form__input:focus-within, .main-form__input:focus-visible, .main-form__field:hover .main-form__input, .main-form__field:focus .main-form__input {
   border-color: var(--accent-color);
 }
 .main-form__textarea {
@@ -384,7 +383,7 @@ img {
   -webkit-transition: border var(--time-transition) var(--cubic);
   transition: border var(--time-transition) var(--cubic);
 }
-.main-form__textarea:focus-within {
+.main-form__textarea:focus-within, .main-form__textarea:focus-visible, .main-form__textarea:hover, .main-form__textarea:focus {
   border-color: var(--accent-color);
 }
 .main-form__textarea::-webkit-input-placeholder {
@@ -683,7 +682,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  overflow-y: auto;
+  width: 528px;
+  height: 581px;
   padding: 40px;
   background-color: var(--basic-white);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

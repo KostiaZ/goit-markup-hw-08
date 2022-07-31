@@ -2,6 +2,7 @@
   &__field {
     margin-bottom: 10px;
     position: relative;
+
     &:nth-last-child(-n + 1) {
       margin-bottom: 0;
     }
@@ -23,7 +24,11 @@
     top: 50%;
     fill: var(--title-text-color);
     transition: fill var(--time-transition) var(--cubic);
-    .main-form__field:focus-within > & {
+
+    .main-form__field:focus-within>&,
+    &:focus-visible,
+    .main-form__field:hover &,
+    .main-form__field:focus & {
       fill: var(--accent-color);
     }
   }
@@ -34,9 +39,12 @@
     padding: 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    border-color: var(--primary-text-color);
     transition: border var(--time-transition) var(--cubic);
-    &:focus-within {
+
+    &:focus-within,
+    &:focus-visible,
+    .main-form__field:hover &,
+    .main-form__field:focus & { 
       border-color: var(--accent-color);
     }
   }
@@ -52,7 +60,11 @@
     margin-bottom: 20px;
     resize: none;
     transition: border var(--time-transition) var(--cubic);
-    &:focus-within {
+
+    &:focus-within,
+    &:focus-visible,
+    &:hover,
+    &:focus {
       border-color: var(--accent-color);
     }
     &::placeholder {
