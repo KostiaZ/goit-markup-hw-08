@@ -1,24 +1,22 @@
 .logo {
-    display: block;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
-    color: $font-title;
-    letter-spacing: 0.03em;
+  display: inline-block;
+  font-family: 'Raleway';
+  font-size: 24px;
+  line-height: 1.16;
+  color: var(--individual-black-logo);
+  text-decoration: none;
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-    list-height: 1.19;
-}
-}
+    line-height: 1.2;
+  }
 
-.logo__text {
-    color: $accent;
-}
+  &__accent {
+    color: var(--accent-color);
+  }
 
-.footer__logo {
+  &--white {
     margin-bottom: 20px;
-    color: $footer-text;
+    color: var(--basic-white);
+  }
 }

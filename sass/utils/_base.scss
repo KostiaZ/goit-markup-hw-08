@@ -1,86 +1,81 @@
-/*-RESET-*/
-html {
-    box-sizing: border-box;
+/* Постоянные переменные на странице */
+body {
+  color: var(--primary-text-color);
+  background: var(--basic-white);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
-/* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    padding: 0;
-    margin: 0;
+ul,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* Класс для обнуления базовых свойств у списков (ul) */
-ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-/* Класс для обнуления базовых свойств у ссылок */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Свойства для корректного отображения картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Свойства для обнуления курсива у address */
-address {
-    font-style: normal;
-}
-
-
-/* base */
-body {
-    font-family: 'roboto', sans-serif;
-    color: $font-p;
-    background-color: $bg-body;
-    font-size: 14px;
-    line-height: 1.14;
-    font-weight: 400;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  }
+}
+
+.mobile-container {
+  @media screen and(max-width:479px) {
+    padding: 34px 30px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 48px 40px;
+    z-index: 900;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 304px;
+  }
+  &.is-open {
+    display: block;
+  }
 }
 
 .section {
-    margin: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
+  padding-bottom: 90px;
+  padding-top: 90px;
+
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+*:focus-visible {
+  outline: none;
 }
