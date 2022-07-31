@@ -2,13 +2,14 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --bgc-color: #2F303A;
+  --bgc-color: #2f303a;
   --accent-color: #2196F3;
-  --basic-white: #FFFFFF;
+  --btn-hover: #188ce8;
+  --basic-white: #fff;
   --individual-black-logo: #000000;
-  --individual-bgc-color: #F5F4FA;
-  --icon-color: #AFB1B8;
-  --header-border-color: #ECECEC;
+  --individual-bgc-color: #f5f4fa;
+  --icon-color: #afb1b8;
+  --header-border-color: #ececec;
   --time-transition: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -528,7 +529,7 @@ img {
   cursor: pointer;
 }
 .btn:hover, .btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--btn-hover);
 }
 
 .submit-btn {
@@ -1352,9 +1353,5 @@ img {
   background: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--basic-white);
-}
-.portfolio-list__btn--current {
-  background-color: var(--accent-color);
   color: var(--basic-white);
 }/*# sourceMappingURL=main.css.map */
