@@ -74,7 +74,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: var(--basic-white);
     text-align: center;
     padding: 48px 40px;
   }
@@ -536,6 +536,8 @@ img {
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
+  -webkit-transition: background-color var(--time-transition) var(--cubic);
+  transition: background-color var(--time-transition) var(--cubic);
 }
 .btn:hover, .btn:focus {
   background-color: var(--btn-hover);
@@ -565,6 +567,12 @@ img {
 }
 .header__button:hover .icon-menu-close, .header__button:hover .icon-menu-open {
   fill: var(--accent-color);
+}
+
+.icon-menu-close,
+.icon-menu-open {
+  -webkit-transition: fill var(--time-transition) var(--cubic);
+  transition: fill var(--time-transition) var(--cubic);
 }
 
 .header__button .icon-menu-close {
@@ -687,6 +695,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity var(--time-transition) var(--cubic), visibility var(--time-transition) var(--cubic);
   transition: opacity var(--time-transition) var(--cubic), visibility var(--time-transition) var(--cubic);
+  overflow-y: scroll;
 }
 
 .modal {

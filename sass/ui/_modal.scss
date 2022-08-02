@@ -9,7 +9,7 @@
   opacity: 1;
   transition: opacity var(--time-transition) var(--cubic),
     visibility var(--time-transition) var(--cubic);
-  
+  overflow-y: scroll;
 }
 
 .modal {
