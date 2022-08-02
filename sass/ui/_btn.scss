@@ -13,8 +13,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-/*   padding: 10px 32px;
- */  cursor: pointer;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -35,7 +34,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 990;
+  z-index: 1;
   @media screen and (min-width: 768px) {
     display: none;
   }

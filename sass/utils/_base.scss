@@ -3,7 +3,12 @@ body {
   background: var(--basic-white);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
+
 
 h1,
 h2,
@@ -51,7 +56,6 @@ img {
     background-color: white;
     text-align: center;
     padding: 48px 40px;
-    z-index: 900;
   }
   @media screen and (min-width: 768px) {
     display: flex;
