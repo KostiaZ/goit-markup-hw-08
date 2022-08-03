@@ -2,6 +2,7 @@
   border-bottom: 1px solid var(--header-border-color);
   position: relative;
 }
+
 .header__inner {
   display: flex;
   align-items: center;
@@ -19,9 +20,9 @@
 }
 
 .header__menu {
-  @media screen and (max-width: 767px) {
+/*   @media screen and (max-width: 767px) {
     margin-bottom: 306px;
-  }
+  } */
 
   @media screen and (min-width: 767px) {
     margin-left: 88px;
@@ -34,11 +35,11 @@
   }
 }
 
-.header__contacts {
+/* .header__contacts {
   @media screen and (max-width: 767px) {
     margin-bottom: 64px;
   }
-}
+} */
 
 .header__social-list {
   display: flex;

@@ -8,6 +8,11 @@
   color: var(--individual-black-logo);
   text-decoration: none;
 
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    left: 16px;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
